@@ -1,1 +1,2 @@
 this is some line in the file
+this is appended line
