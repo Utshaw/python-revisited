@@ -9,4 +9,4 @@ res = requests.get(myUrl, headers={
 res.raise_for_status()
 soup = bs4.BeautifulSoup(res.text, 'html.parser')
 print(soup)
-print(soup.find('.a-color-price'))
+print(soup.select('#unqualifiedBuyBox > div > div.a-text-center.a-spacing-mini > span'))
