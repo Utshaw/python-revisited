@@ -9,6 +9,10 @@ import pyautogui
 pyautogui.screenshot('screenshot.png') # returns a Pillow image object
 
 image_to_search = "dropbox-gnome-bar-icon.png"
+# print(pyautogui.locateOnScreen(image_to_search))
 
-x-cordinate, y-cordinate, imageWidth, imageHeight = pyautogui.locateOnScreen(image_to_search) # returns a tuple if the image_to_search is found in the screen 
-x-cordinate, y-cordinate = pyautogui.locateOnScreen(image_to_search) # returns x,y co-ordinate of the matched image found on the screen
+
+x_cordinate, y_cordinate, imageWidth, imageHeight = pyautogui.locateOnScreen(image_to_search) # returns a tuple if the image_to_search is found in the screen 
+x_cordinate, y_cordinate = pyautogui.locateCenterOnScreen(image_to_search) # returns x,y co-ordinate of the matched image found on the screen
+pyautogui.moveTo(x_cordinate, y_cordinate, duration=1)
+pyautogui.click(x_cordinate, y_cordinate)
