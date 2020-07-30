@@ -17,3 +17,25 @@ p.runs[3].text = 'italic and underlined'
 d.save('demo2.docx') # save the original doc as demo2.docx
 
 
+def createDocx(docName):
+    d = docx.Document()
+    d.add_paragraph('Hello this is a paragraph.')
+    d.add_paragraph('Hello this is another paragraph.')
+    p  = d.paragraphs[0]
+    p.add_run(' This is a new run.') # it adds another run; so two runs now
+    p.runs[1].bold = True # bolds the second run
+    d.save(docName)
+
+def readDoc(fileName):
+    doc = docx.Document(fileName)
+    fullText = []
+    for para in doc.paragraphs:
+        fullText.append(para.text)
+    
+    return '\n'.join(fullText)
+
+
+print(readDoc('demo3.docx'))
+
+# createDocx('demo3.docx')
+
