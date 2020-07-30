@@ -4,4 +4,4 @@ import smtplib
 conn = smtplib.SMTP('smtp.gmail.com', 587) # domain, port number
 conn.ehlo() # start the connection, 
 conn.starttls()  # TLS encryption
-conn.login('')
+conn.login('d')
