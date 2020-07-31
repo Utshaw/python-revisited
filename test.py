@@ -6,7 +6,7 @@ class Math:
     def add_five(x):
         return x + 5
 
-print(Math.add_five(100))
+
 
 
 class Person:
@@ -90,6 +90,8 @@ s2 = Student('Tanvir', 19, 75)
 s3 = Student('Utshaw', 19, 65)
 course = Course("Science", 2)
 
+
+print(Math.add_five(100))
 course.add_student(s1)
 course.add_student(s2)
 print(course.get_average_grade())
