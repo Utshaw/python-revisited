@@ -1,29 +1,34 @@
 #!/usr/bin/env python3
 
-class Dog:
-
+class Pet:
     def __init__(self, name, age):
         self.name = name
         self.age = age
 
-    def add_one(self, x):
-        return x + 1
+    def show(self):
+        print(f"I am {self.name} and I am {self.age} years old")
 
-    def bark(self):
+    def speak(self):
+        print('I dont know what I say')
+    
+class Fish(Pet):
+    pass
+
+class Dog(Pet): # inheriting upper level class Pet
+    def speak(self):
         print('Bark')
     
-    def get_name(self):
-        return self.name
+class Cat(Pet): # inheriting upper level class Pet
 
-    def get_age(self):
-        return self.age 
+    def __init__(self, name, age, color):
+        super().__init__(name, age)
+        self.color = color
 
+    def speak(self):
+        print('Meow')
 
-    def set_age(self, age):
-        this.age = age
-
-    def set_name(self, name):
-        self.name = name
+    def show(self):
+        print(f"I am {self.name} and I am {self.age} years old & I'm of {self.color} color.")
 
 class Student:
     def __init__(self, name, age, grade):
@@ -67,3 +72,10 @@ course = Course("Science", 2)
 course.add_student(s1)
 course.add_student(s2)
 print(course.get_average_grade())
+
+p = Pet('Tim', 18)
+c = Cat('Bill', 34, 'Brown')
+c.show()
+c.speak()
+f = Fish('KUKU', 100)
+f.speak()
