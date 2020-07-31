@@ -1,4 +1,15 @@
 #!/usr/bin/env python3
+class Person:
+    number_of_people = 0
+
+    def __init__(self, name):
+        self.name = name
+        Person.number_of_people += 1
+        
+    @classmethod
+    def get_number_of_people(cls):
+        return cls.number_of_people
+
 
 class Pet:
     def __init__(self, name, age):
@@ -79,3 +90,6 @@ c.show()
 c.speak()
 f = Fish('KUKU', 100)
 f.speak()
+p1 = Person('Farhan')
+p2 = Person('Utshaw')
+print(Person.get_number_of_people())
