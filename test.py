@@ -1,4 +1,14 @@
 #!/usr/bin/env python3
+
+class Math:
+
+    @staticmethod
+    def add_five(x):
+        return x + 5
+
+print(Math.add_five(100))
+
+
 class Person:
     number_of_people = 0
 
