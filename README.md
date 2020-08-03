@@ -26,6 +26,8 @@ https://www.rokomari.com/book/101763/python-porichiti
 #### Polymorphism
 - Present the same interface in different data types
 #### Inheritance
+- Classes can inherit methods and variables from another class
+- Class that is inherited from is parent class
 
 ## Functional Programming
 - Passing data from function to function to get result
