@@ -17,8 +17,12 @@ https://www.rokomari.com/book/101763/python-porichiti
 ## OOP Programming
 - Encapsulating data and behaviour into objects.
 ### Five pillars of OOP
-- Encapsulation
-- Abstraction
+#### Encapsulation
+- Objects group variables, which hold state, and methods that alter state
+- Hiding a clien't internal data to prevent the client from directly accessing it (Client: Code outside of the class that uses the object)
+#### Abstraction
+- 
+
 - Polymorphism
 - Inheritance
 
