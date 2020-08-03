@@ -1,6 +1,7 @@
 # python-revisited
 ## Classes
 - Two types of variables
+- Every class inherits from parent class Object
 ### Class Variables
 - Belongs to object and the object's class
 ### Instance Variable

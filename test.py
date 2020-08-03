@@ -5,9 +5,13 @@ class Shape:
 
 
 class Rectangle(Shape):
+
+    recs = [] # class variable
+
     def __init__(self, width, length):
-        self.width = width
-        self.length = length
+        self.width = width # instance variable
+        self.length = length # instance variable
+        self.recs.append((self.width, self.length))
 
     def calculate_perimeter(self):
         return (self.width + self.length) * 2
