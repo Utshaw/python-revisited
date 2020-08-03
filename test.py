@@ -15,6 +15,9 @@ class Rectangle(Shape):
 
     def calculate_perimeter(self):
         return (self.width + self.length) * 2
+    
+    def __repr__(self):
+        return "Rectangle(Length: {}, Width: {})".format(self.length, self,width)
 
 
 class Square(Shape):
