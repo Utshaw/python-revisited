@@ -22,7 +22,7 @@ https://www.rokomari.com/book/101763/python-porichiti
 - Hiding a clien't internal data to prevent the client from directly accessing it (Client: Code outside of the class that uses the object)
 - Name of variable/method that starts with '_' shouldn't be accessed outside of the class (It is private)
 #### Abstraction
-- 
+- Taking away or removing characteristics from something to reduce it to a set of essential characteristics
 
 - Polymorphism
 - Inheritance
