@@ -1,44 +1,27 @@
-import random
 
-def hangman(word):
-    wrong = 0
-    stages = ["",
-             "________        ",
-             "|               ",
-             "|        |      ",
-             "|        0      ",
-             "|       /|\     ",
-             "|       / \     ",
-             "|               "
-              ]
-    rletters = list(word)
-    board = ["__"] * len(word)
-    win = False
-    print("Welcome to Hangman")
-    while wrong < len(stages) - 1:
-        print("\n")
-        msg = "Guess a letter"
-        char = input(msg)
-        if char in rletters:
-            cind = rletters.index(char)
-            board[cind] = char
-            rletters[cind] = '$'
-        else:
-            wrong += 1
-        print((" ".join(board)))
-        e = wrong + 1
-        print("\n".join(stages[0: e]))
-        if "__" not in board:
-            print("You win!")
-            print(" ".join(board))
-            win = True
-            break
-    if not win:
-        print("\n"
-              .join(stages[0: wrong]))
-        print("You lose! It was {}.".format(word))
+class Shape:
+    def what_am_i(self):
+        print("I am a shape")
 
 
-listOfWords = ["cat", "dog", "horse", "giraffe", "tortoise", "ant"]
+class Rectangle(Shape):
+    def __init__(self, width, length):
+        self.width = width
+        self.length = length
 
-hangman(listOfWords[random.randint(0, len(listOfWords) - 1)])
+    def calculate_perimeter(self):
+        return (self.width + self.length) * 2
+
+
+class Square(Shape):
+    def __init__(self, s1):
+        self.s1 = s1
+    
+    def calculate_perimeter(self):
+        return self.s1 * 4
+
+
+sq = Square(10)
+rc = Rectangle(10, 20)
+sq.what_am_i()
+rc.what_am_i()

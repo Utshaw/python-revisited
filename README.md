@@ -1,4 +1,11 @@
 # python-revisited
+## Classes
+- Two types of variables
+### Class Variables
+- Belongs to object and the object's class
+### Instance Variable
+- Belong to object
+
 ## Iterables
 <img src="3.png">
 
@@ -28,6 +35,7 @@ https://www.rokomari.com/book/101763/python-porichiti
 #### Inheritance
 - Classes can inherit methods and variables from another class
 - Class that is inherited from is parent class
+- Class that inherits is child class
 
 ## Functional Programming
 - Passing data from function to function to get result
