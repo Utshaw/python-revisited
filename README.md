@@ -20,7 +20,7 @@ https://www.rokomari.com/book/101763/python-porichiti
 #### Encapsulation
 - Objects group variables, which hold state, and methods that alter state
 - Hiding a clien't internal data to prevent the client from directly accessing it (Client: Code outside of the class that uses the object)
-- Name or variable that starts with '_' shouldn't be accessed outside of the class (It is private)
+- Name of variable/method that starts with '_' shouldn't be accessed outside of the class (It is private)
 #### Abstraction
 - 
 
