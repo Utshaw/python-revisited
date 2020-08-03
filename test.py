@@ -28,9 +28,20 @@ class Square(Shape):
         return self.s1 * 4
 
 
-sq = Square(10)
-rc = Rectangle(10, 20)
+class Person:
+    def __init__(self):
+        self.name = "Utshaw"
 
-print(rc)
-sq.what_am_i()
-rc.what_am_i()
+utshaw = Person()
+farhan = utshaw
+print(farhan is utshaw)
+
+newPerson = Person()
+print(newPerson is utshaw)
+
+# sq = Square(10)
+# rc = Rectangle(10, 20)
+
+# print(rc)
+# sq.what_am_i()
+# rc.what_am_i()
