@@ -34,10 +34,10 @@ class Person:
 
 utshaw = Person()
 farhan = utshaw
-print(farhan is utshaw)
+print(farhan is utshaw) # True
 
 newPerson = Person()
-print(newPerson is utshaw)
+print(newPerson is utshaw) # False
 
 # sq = Square(10)
 # rc = Rectangle(10, 20)

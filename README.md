@@ -24,7 +24,19 @@ class Rectangle(Shape):
 
 ```
 ## is keyword
+```
 
+class Person:
+    def __init__(self):
+        self.name = "Utshaw"
+
+utshaw = Person()
+farhan = utshaw
+print(farhan is utshaw) # True
+
+newPerson = Person()
+print(newPerson is utshaw) # False
+```
 
 ## Iterables
 <img src="3.png">
