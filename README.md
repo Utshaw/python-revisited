@@ -23,9 +23,9 @@ https://www.rokomari.com/book/101763/python-porichiti
 - Name of variable/method that starts with '_' shouldn't be accessed outside of the class (It is private)
 #### Abstraction
 - Taking away or removing characteristics from something to reduce it to a set of essential characteristics
-
-- Polymorphism
-- Inheritance
+#### Polymorphism
+- Present the same interface in different data types
+#### Inheritance
 
 ## Functional Programming
 - Passing data from function to function to get result
