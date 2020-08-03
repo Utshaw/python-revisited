@@ -6,6 +6,24 @@
 - Belongs to object and the object's class
 ### Instance Variable
 - Belong to object
+```
+class Rectangle(Shape):
+
+    recs = [] # class variable
+
+    def __init__(self, width, length):
+        self.width = width # instance variable
+        self.length = length # instance variable
+        self.recs.append((self.width, self.length))
+
+    def calculate_perimeter(self):
+        return (self.width + self.length) * 2
+    
+    def __repr__(self): # magic method
+        return "Rectangle(Length: {}, Width: {})".format(self.length, self.width)
+
+```
+
 
 ## Iterables
 <img src="3.png">
