@@ -16,6 +16,11 @@ https://www.rokomari.com/book/101763/python-porichiti
 
 ## OOP Programming
 - Encapsulating data and behaviour into objects.
+### Five pillars of OOP
+- Encapsulation
+- Abstraction
+- Polymorphism
+- Inheritance
 
 ## Functional Programming
 - Passing data from function to function to get result
