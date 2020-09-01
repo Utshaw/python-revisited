@@ -74,3 +74,12 @@ https://www.rokomari.com/book/101763/python-porichiti
 - Functions are treated as data, you can use them as parameters, return them, build functions from other functions , and build custome functions
 - Functions should be pure functions, they should avoid shred state, side effects and data should be immutable
 - not dependent on local or global state
+
+## Package Manager
+- A program that installs or manages other programs. 
+- pip is a package manager for Python
+- package is a software meant for distribuion 
+- package includes files that make up the actual program, meta data (software name, version number & dependencies)
+```
+sudo pip3 install Flask==0.12.2
+```
